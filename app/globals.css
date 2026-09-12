@@ -1,26 +1,58 @@
 @import "tailwindcss";
 
+/* Tells Tailwind to switch dark: styles based on a .dark class,
+   not the OS-level color scheme. We need this because our toggle
+   button (Lesson 4) will add/remove this class by hand. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #f5f4f0;
+  --surface: #ffffff;
+  --border: #dedcd3;
+  --text: #14171c;
+  --text-muted: #5c5e5a;
+  --accent: #3a5ff7;
+  --accent-contrast: #ffffff;
+}
+
+.dark {
+  --bg: #0a0c10;
+  --surface: #12151b;
+  --border: #262b33;
+  --text: #edeceb;
+  --text-muted: #9497a0;
+  --accent: #6c8bff;
+  --accent-contrast: #0a0c10;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-accent-contrast: var(--accent-contrast);
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
