@@ -9,7 +9,7 @@ export function Hero() {
     >
       <div className="mx-auto w-full max-w-6xl">
         <p className="font-mono text-sm text-accent">
-          {siteConfig.role} — {siteConfig.location}
+          {siteConfig.role} · {siteConfig.location}
         </p>
 
         <h1 className="mt-6 max-w-3xl font-display text-5xl font-semibold leading-[1.05] tracking-tight text-text sm:text-6xl md:text-7xl">

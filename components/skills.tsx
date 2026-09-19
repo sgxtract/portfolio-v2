@@ -3,7 +3,7 @@ import { SkillMarquee } from "./skill-marquee";
 
 export function Skills() {
   return (
-    <section id="skills" className="px-6 py-28">
+    <section id="skills" aria-labelledby="skills-heading" className="px-6 py-28 scroll-mt-24">
       <div className="mx-auto max-w-6xl">
         <div className="max-w-xl">
           <h2 className="font-display text-3xl font-semibold tracking-tight text-text sm:text-4xl">

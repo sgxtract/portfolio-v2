@@ -2,7 +2,7 @@ import { aboutStats } from "@/lib/data";
 
 export function About() {
   return (
-    <section id="about" className="px-6 py-28">
+    <section id="about" aria-labelledby="about-heading" className="px-6 py-28 scroll-mt-24">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-16 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
           <h2 className="font-display text-3xl font-semibold tracking-tight text-text sm:text-4xl">

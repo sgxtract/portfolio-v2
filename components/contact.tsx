@@ -3,7 +3,7 @@ import { siteConfig } from "@/lib/data";
 
 export function Contact() {
   return (
-    <section id="contact" className="px-6 py-28">
+    <section id="contact" aria-labelledby="contact-heading" className="px-6 py-28 scroll-mt-24">
       <div className="mx-auto max-w-6xl rounded-lg border border-border bg-surface px-8 py-16 text-center sm:px-16">
         <h2 className="font-display text-3xl font-semibold tracking-tight text-text sm:text-4xl">
           Let&apos;s build something.
