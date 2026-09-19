@@ -26,12 +26,14 @@ import {
   SiN8N,
   SiNotion,
 } from "react-icons/si";
+import { LuGithub, LuLinkedin } from "react-icons/lu";
 
 export const siteConfig = {
   name: "NJA Systems",
   role: "Full-Stack Developer",
-  tagline: "I design and build web systems from interface to database.",
-  location: "Available worldwide · Remote",
+  tagline: "I design and build web systems — from interface to database.",
+  location: "Philippines · Remote-friendly",
+  email: "njagnis@gmail.com",
 };
 
 export const navLinks = [
@@ -151,16 +153,38 @@ export const projects: Project[] = [
       "A procurement platform built for the Local Government of Sorsogon, staff submit and manage procurement requests through a structured workflow, with public visibility into active procurements for transparency.",
     tags: ["Next.js", "TypeScript", "PostgreSQL", "Supabase"],
     status: "In progress",
-    href: "http://localhost:3001/",     // add once there's a public URL
+    href: "http://localhost:3001/", // add once there's a public URL
     repoHref: "https://github.com/sgxtract/pmis-core.git",
   },
   {
     index: "02",
     name: "Online Parking Management System (OPMS)",
     description:
-      "A parking reservation system that lets users book a specific slot in advance, backed by a PHP/Laravel REST API that also served a companion Android app.",
-    tags: ["PHP", "Laravel", "MySQL", "REST API", "Android"], // we'll add React Native here once you confirm
+      "A parking reservation system that lets users book a specific slot in advance, backed by a PHP/Laravel REST API returning JSON, consumed by a native Android app built in Java.",
+    tags: ["PHP", "Laravel", "MySQL", "REST API", "JSON", "Java", "Android"], // we'll add React Native here once you confirm
     // href: "",
     repoHref: "https://github.com/sgxtract/uparking2.git",
+  },
+];
+
+export const aboutStats = [
+  { label: "Based in", value: "Philippines · Remote-friendly" },
+  { label: "Focus", value: "Full-stack web systems" },
+  { label: "Currently", value: "Building PMIS for LGU Sorsogon" },
+  { label: "Stack", value: "TypeScript, Next.js, Laravel, PostgreSQL" },
+];
+
+export type SocialLink = {
+  label: string;
+  href: string;
+  icon: IconType;
+};
+
+export const socials: SocialLink[] = [
+  { label: "GitHub", href: "https://github.com/sgxtract", icon: LuGithub },
+  {
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/tonagnis",
+    icon: LuLinkedin,
   },
 ];
