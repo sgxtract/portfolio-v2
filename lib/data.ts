@@ -30,6 +30,7 @@ import { LuGithub, LuLinkedin } from "react-icons/lu";
 
 export const siteConfig = {
   name: "NJA Systems",
+  fullName: "Nestor Jr. Agnis",
   role: "Full-Stack Developer",
   tagline: "I design and build web systems from interface to database.",
   location: "Philippines · Remote-friendly",
