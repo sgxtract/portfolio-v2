@@ -153,7 +153,7 @@ export const projects: Project[] = [
       "A procurement platform built for the Local Government of Sorsogon, staff submit and manage procurement requests through a structured workflow, with public visibility into active procurements for transparency.",
     tags: ["Next.js", "TypeScript", "PostgreSQL", "Supabase"],
     status: "In progress",
-    href: "http://localhost:3001/", // add once there's a public URL
+    // href: "", // add once there's a public URL
     repoHref: "https://github.com/sgxtract/pmis-core.git",
   },
   {
