@@ -44,7 +44,7 @@ export function Hero() {
         </div>
 
         <div className="justify-self-center lg:justify-self-end">
-          <div className="relative aspect-4/5 w-56 sm:w-64 lg:w-80 overflow-hidden rounded-[5rem]">
+          <div className="relative aspect-4/5 w-56 sm:w-64 lg:w-80 overflow-hidden rounded-[6rem]">
             <Image
               src="/profile.png"
               alt={`Portrait of ${siteConfig.fullName}`}
